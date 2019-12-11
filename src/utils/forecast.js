@@ -18,7 +18,7 @@ const forecast = (longitude, latitude, callback) => {
           ${body.currently.temperature} 
           °C ute, det är en
           ${body.currently.precipProbability} 
-          % risk för regn/snö. Idag kommer max temperaturen att vara ${body.daily.data[0].temperatureMax} °C och som minst ${body.daily.data[0].temperatureMin} °C`
+          % risk för regn/snö. Idag kommer max temperaturen att vara ${body.daily.data[0].temperatureMax} °C och som minst ${body.daily.data[0].temperatureMin} °C.`
       );
     }
   });
