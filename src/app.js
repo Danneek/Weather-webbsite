@@ -93,6 +93,14 @@ app.get("/help/*", (req, res) => {
   });
 });
 
+app.get("/news", (req, res) => {
+  res.render("news", {
+    newsText: "This is some news.",
+    title: "News",
+    name: "Daniel Ek"
+  });
+});
+
 app.get("*", (req, res) => {
   res.render("404", {
     title: "404",
